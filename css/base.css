@@ -49,7 +49,7 @@ h2 {
   padding-bottom: calc(40px + (104 - 40) * ((100vw - 320px) / (1920 - 320)));
 }
 
-@media(min-width: 1440px) {
+@media(min-width: 1439px) {
   .container {
     max-width: 1440px;
   }
