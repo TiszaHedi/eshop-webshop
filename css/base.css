@@ -1,0 +1,81 @@
+/**
+ * OVERVIEW
+ *
+ * The project is divided into separate style sheets:
+ *
+ * bootstrap.css............CSS rules that control the layout of the website.
+ * base.css..............Global rules and helpers.
+ * components.css........The CSS of components that build up the site.
+ */
+
+
+/**
+ * TABLE OF CONTENTS
+ *
+ * SETTINGS
+ * Variables............Globally-available variables.
+ * Margins..............Global values of top and bottom margins.
+ *
+ * TYPOGRAPHY
+ * Headings, links and buttons............Typography styles.
+ *
+ * GUTTERS
+ * 
+ */
+
+
+
+
+
+/*------------------------------------*\
+  #SETTINGS
+\*------------------------------------*/
+
+:root {
+  --primary-color:      #AA67FF;
+  --secondary-color:    #232837;
+  --primary-font-color: #ffffff;
+}
+
+html { 
+  max-width: 1920px; 
+  margin: 0 auto;
+  background-color: white;
+}
+
+
+h2 {
+  padding-top: calc(20px + (85 - 20) * ((100vw - 320px) / (1920 - 320)));
+  padding-bottom: calc(40px + (104 - 40) * ((100vw - 320px) / (1920 - 320)));
+}
+
+@media(min-width: 1200px) {
+  .container {
+    max-width: 1440px;
+  }
+}
+
+
+
+
+/*------------------------------------*\
+  #TIPOGRAPHY
+\*------------------------------------*/
+body {
+  font-family: 'Poppins', sans-serif;
+  color:       var(--primary-font-color);
+  font-weight: 350;
+  background: var(--secondary-color);
+}
+
+
+h1 { font-size: calc(28px + (90 - 28) * ((100vw - 320px) / (1920 - 320))); }
+
+h2 { font-size: calc(25px + (48 - 25) * ((100vw - 320px) / (1920 - 320))); }
+
+h3 { font-size: calc(18px + (22 - 18) * ((100vw - 320px) / (1920 - 320))); }
+
+h4 { font-size: calc(16px + (20 - 16) * ((100vw - 320px) / (1920 - 320))); }
+
+
+h1, h2, h3, h4 { font-weight: 700; } 

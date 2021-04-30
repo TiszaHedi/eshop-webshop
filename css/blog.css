@@ -1,0 +1,59 @@
+@import 'base.css';
+@import 'base-components.css';
+
+/*------------------------------------*\
+  #BUTTON
+\*------------------------------------*/
+
+.blog-list {
+  background-image: url('../assets/divider1.svg');
+  background-position: left top;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+  .blog-list h4 {
+    font-size: 18px;
+    padding: 14px 0 0 0;
+  }
+
+  .blog-list p { 
+    font-size: 14px; 
+    color: rgba(255, 255, 255, .5);
+  }
+
+  .blog-list a { margin-bottom: 60px; }
+
+
+
+
+
+/*------------------------------------*\
+  #PAGINATION
+\*------------------------------------*/
+
+.pagination { 
+  margin: 7.25rem auto; 
+  justify-content: center;
+}
+
+.pagination-link {
+  display: inline-block;
+  font-size: 24px;
+  padding: 0 30px;
+  color: white;
+  text-decoration: none;
+  line-height: 1;
+  font-weight: 700;
+}
+
+.pagination-link:hover {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.pagination--active { color: var(--primary-color );}
+
+@media(max-width: 768px) {
+  .pagination {margin: 3rem auto;}
+}

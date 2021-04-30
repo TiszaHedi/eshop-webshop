@@ -1,0 +1,134 @@
+@import 'base.css';
+@import 'base-components.css';
+
+/**
+ * Components of INDEX.HTML styles
+ *
+ * TABLE OF CONTENTS
+ *
+ * 1. SLIDER
+ *
+ * 2. FEATURED ITEMS
+ *
+ * 3. NAVIGATION
+ *
+ * 4. FOOTER
+ *
+ */
+
+
+
+
+
+/*------------------------------------*\
+  #SLIDER
+\*------------------------------------*/
+
+.carousel-caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  bottom: auto;
+  transform: translate(0, -50%);
+  margin: auto;
+  text-align: left;
+  font-size: 90px;
+  line-height: 108px;
+  font-weight: 700;
+}
+
+  .carousel-control-next,
+  .carousel-control-prev {
+    width: auto;
+    z-index: 99;
+  }
+
+
+  @media(max-width: 768px) {
+    header {
+      margin-top: 80px;
+    }
+  }
+
+
+
+
+
+/*------------------------------------*\
+  #FEATURED ITEMS
+\*------------------------------------*/
+
+.featured-items {
+  background-image: url('../assets/divider1.svg'), url('../assets/triangle1.svg');
+  background-position: left top, right 103px;
+  background-repeat: no-repeat;
+  background-size: 100%, 90%;
+}
+
+  .brand {
+    font-size: 1rem;
+    opacity: 0.5;
+    font-weight: 700;
+  }
+
+  .price {
+    font-size: 26px;
+    color: rgba(170, 103, 255, 1);
+    font-weight: 700;
+  }
+
+
+
+/*------------------------------------*\
+  #NEW ITEMS
+\*------------------------------------*/
+
+.new-items {
+  background-image: url('../assets/divider2.svg'), url('../assets/triangle2.svg');
+  background-position: left top, -10px 142px;
+  background-repeat: no-repeat;
+  background-size: 100%, 90%;
+}
+
+
+@media(max-width: 768px) {
+  .featured-items .button,
+  .new-items .button {
+    margin-bottom: 3rem;
+  }
+}
+
+
+/*------------------------------------*\
+  #BLOG SLIDER
+\*------------------------------------*/
+
+.blog {
+  background: url('../assets/blog\ background.jpg') no-repeat center center/cover;
+  padding-bottom: 133px;
+}
+
+@media(max-width: 768px) {
+    .blog p {font-size: 14px;}
+}
+
+
+/*------------------------------------*\
+  #NEWSLETTER
+\*------------------------------------*/
+
+.newsletter {
+  background-image: url('../assets/divider1.svg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.newsletter--content {
+  text-align: center;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.newsletter .input--field {
+  margin: 2rem 0;
+}
